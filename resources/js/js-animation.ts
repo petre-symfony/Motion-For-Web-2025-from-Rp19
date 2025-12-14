@@ -1,10 +1,24 @@
 const square = document.querySelector('.square') as HTMLDivElement
 
 const keyframes = [
-  { transform: 'translateX(0px) translateY(0px)', easing: 'ease-in-out' },
-  { transform: 'translateX(100px)' },
-  { transform: 'translateX(100px) translateY(100px)', easing: 'steps(3)' },
-  { transform: 'translateX(0px) translateY(100px)' },
+  {
+    transform: 'translateX(0px) translateY(0px)',
+    easing: 'ease-in-out' },
+  {
+    transform: 'translateX(100px) rotate(45deg)',
+    offset: 0.2,
+    easing: 'ease-in-out'
+  },
+  {
+    transform: 'translateX(100px) translateY(100px)',
+    scale: 0.8,
+    easing: 'ease-in-out'
+  },
+  {
+    transform: 'translateX(0px) translateY(100px) rotate(-90deg)',
+    offset: 0.8,
+    easing: 'ease-in-out'
+  },
   { transform: 'translateX(0px) translateY(0px)' }
 ]
 
