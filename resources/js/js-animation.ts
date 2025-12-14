@@ -30,6 +30,7 @@ const playButton = document.querySelector('#play') as HTMLButtonElement
 const pauseButton = document.querySelector('#pause') as HTMLButtonElement
 const reverseButton = document.querySelector('#reverse') as HTMLButtonElement
 const slider = document.querySelector('#slider') as HTMLInputElement
+const progress = document.querySelector('#progress') as HTMLSpanElement
 
 const animation = square.animate(keyframes, options)
 
@@ -56,6 +57,8 @@ slider.addEventListener('input', () => {
 
   animation.currentTime = slider.valueAsNumber * totalDuration
 })
+
+progress.innerText = `0%`
 
 /*square.style.transform = 'rotate(45deg)'
 
