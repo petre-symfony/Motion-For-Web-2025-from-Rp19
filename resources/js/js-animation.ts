@@ -48,7 +48,10 @@ reverseButton.addEventListener('click', () => {
 slider.addEventListener('input', () => {
   // Sync the slider value to the animation speed
 
-  animation.playbackRate = parseFloat(slider.value)
+  // animation.playbackRate = parseFloat(slider.value)
+
+  //Sync the animation progress to the slider value
+  animation.currentTime = 1500
 })
 
 /*square.style.transform = 'rotate(45deg)'
