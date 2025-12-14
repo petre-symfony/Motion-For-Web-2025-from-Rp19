@@ -9,7 +9,9 @@ function rotateSquare() {
   rotation += 1
   square.style.transform = `rotate(${rotation}deg)`
 
-  requestAnimationFrame(rotateSquare)
+  if (rotation <= MAX_ROTATION) {
+    requestAnimationFrame(rotateSquare)
+  }
 }
 
 rotateSquare()
