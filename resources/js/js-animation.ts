@@ -8,9 +8,9 @@ const keyframes = [
   { transform: 'translateX(0px) translateY(0px)' }
 ]
 
-const options = {
+const options: KeyframeAnimationOptions = {
   duration: 2000,
-  repeat: 3,
+  iterations: 3,
 }
 
 square.animate(keyframes, options)
