@@ -1,6 +1,7 @@
 const square = document.querySelector('.square')
 
-square.style.transform = 'rotate(45deg)'
+
+/*square.style.transform = 'rotate(45deg)'
 
 let rotation = 0
 const MAX_ROTATION = 360
@@ -14,7 +15,7 @@ function rotateSquare() {
   }
 }
 
-rotateSquare()
+rotateSquare()*/
 
 /*const intervalId = setInterval(() => {
   rotation += 1
