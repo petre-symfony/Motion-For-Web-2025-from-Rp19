@@ -53,7 +53,6 @@ slider.addEventListener('input', () => {
 
   //Sync the animation progress to the slider value
   const totalDuration = animation.effect?.getTiming().duration as number
-  console.log({totalDuration})
 
   animation.currentTime = slider.valueAsNumber * totalDuration
 })
@@ -64,7 +63,7 @@ function updateProgress() {
   const currentProgress = animation.effect?.getComputedTiming().progress
 
   if (currentProgress) {
-    const currentProgressText = currentProgress * 100 + '%'
+    const currentProgressText = (currentProgress * 100).toFixed() + '%'
     progressText.innerText = currentProgressText
   }
 
