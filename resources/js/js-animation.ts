@@ -3,7 +3,7 @@ const square = document.querySelector('.square')
 square.style.transform = 'rotate(45deg)'
 
 let rotation = 0
-const MAX_ROTATION = 45
+const MAX_ROTATION = 360
 
 function rotateSquare() {
   rotation += 1
