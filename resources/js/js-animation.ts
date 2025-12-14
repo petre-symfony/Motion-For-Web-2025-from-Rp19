@@ -45,7 +45,7 @@ reverseButton.addEventListener('click', () => {
   animation.reverse()
 })
 
-slider.addEventListener('change', () => {
+slider.addEventListener('input', () => {
   // Sync the slider value to the animation speed
 
   animation.playbackRate = parseFloat(slider.value)
