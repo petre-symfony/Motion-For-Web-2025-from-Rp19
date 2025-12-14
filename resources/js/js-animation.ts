@@ -22,7 +22,7 @@ const keyframes = [
   { transform: 'translateX(0px) translateY(0px)' }
 ]
 const options: KeyframeAnimationOptions = {
-  duration: 5000,
+  duration: 3000,
   iterations: Infinity,
   easing: 'ease-in-out'
 }
@@ -48,10 +48,10 @@ reverseButton.addEventListener('click', () => {
 slider.addEventListener('input', () => {
   // Sync the slider value to the animation speed
 
-  // animation.playbackRate = parseFloat(slider.value)
+  // animation.playbackRate = parseFloat(slider.valueAsNumber)
 
   //Sync the animation progress to the slider value
-  animation.currentTime = 1500
+  animation.currentTime = slider.valueAsNumber
 })
 
 /*square.style.transform = 'rotate(45deg)'
