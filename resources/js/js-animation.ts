@@ -1,8 +1,9 @@
 const square = document.querySelector('.square') as HTMLDivElement
 
 const keyframes = [
+  { transform: 'translateX(0px) translateY(0px)' },
   { transform: 'translateX(100px)' },
-  { transform: 'translateX(0px) translateY(100px)' },
+  { transform: 'translateX(100px) translateY(100px)' },
   { transform: 'translateX(0px) translateY(100px)' },
   { transform: 'translateX(0px) translateY(0px)' }
 ]
