@@ -64,7 +64,8 @@ function updateProgress() {
   const currentProgress = animation.effect?.getComputedTiming().progress
 
   if (currentProgress) {
-    progressText.innerText = currentProgress.toString()
+    const currentProgressText = currentProgress * 100 + '%'
+    progressText.innerText = currentProgressText
   }
 
   requestAnimationFrame(updateProgress)
