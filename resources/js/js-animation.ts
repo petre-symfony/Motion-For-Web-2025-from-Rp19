@@ -1,16 +1,17 @@
 const square = document.querySelector('.square') as HTMLDivElement
 
 const keyframes = [
-  { transform: 'translateX(0px) translateY(0px)' }, //0%
-  { transform: 'translateX(100px)', offset: 0.4 }, //40%
-  { transform: 'translateX(100px) translateY(100px)', offset: 0.5 }, //50%
-  { transform: 'translateX(0px) translateY(100px)', offset: 0.9 }, //90%
-  { transform: 'translateX(0px) translateY(0px)' } //100%
+  { transform: 'translateX(0px) translateY(0px)' },
+  { transform: 'translateX(100px)' },
+  { transform: 'translateX(100px) translateY(100px)' },
+  { transform: 'translateX(0px) translateY(100px)' },
+  { transform: 'translateX(0px) translateY(0px)' }
 ]
 
 const options: KeyframeAnimationOptions = {
   duration: 2000,
-  iterations: Infinity
+  iterations: Infinity,
+  easing: 'ease-in-out'
 }
 
 square.animate(keyframes, options)
