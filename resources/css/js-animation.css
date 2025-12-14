@@ -8,3 +8,14 @@ body {
   background-color: oklch(0.69 0.18 245.62);
   border-radius: 0.25rem;
 }
+
+.controls {
+  margin-top: 150px;
+  display: flex;
+  gap: 1rem;
+
+  button {
+    padding: 0.5rem 1rem;
+    background-color: #c7c7c7;
+  }
+}
