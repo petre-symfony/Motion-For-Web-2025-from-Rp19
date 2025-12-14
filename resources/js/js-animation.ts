@@ -2,9 +2,9 @@ const square = document.querySelector('.square') as HTMLDivElement
 
 const keyframes = [
   { transform: 'translateX(0px) translateY(0px)' }, //0%
-  { transform: 'translateX(100px)', border: 'solid 8px black', offset: 0.4 }, //40%
-  { transform: 'translateX(100px) translateY(100px)' }, //50%
-  { transform: 'translateX(0px) translateY(100px)' }, //90%
+  { transform: 'translateX(100px)', offset: 0.4 }, //40%
+  { transform: 'translateX(100px) translateY(100px)', offset: 0.5 }, //50%
+  { transform: 'translateX(0px) translateY(100px)', offset: 0.9 }, //90%
   { transform: 'translateX(0px) translateY(0px)' } //100%
 ]
 
