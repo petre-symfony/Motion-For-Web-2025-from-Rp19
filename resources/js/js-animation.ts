@@ -28,7 +28,9 @@ const options: KeyframeAnimationOptions = {
   easing: 'ease-in-out'
 }
 
-square.animate(keyframes, options)
+const animation = square.animate(keyframes, options)
+
+// animation.pause()
 
 /*square.style.transform = 'rotate(45deg)'
 
