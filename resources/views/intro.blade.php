@@ -5,6 +5,6 @@
     <button id="pause">Pause</button>
     <button id="play">Play</button>
     <button id="reverse">Reverse</button>
-    <input id="slider" type="range" value="0" min="0" max="3000">
+    <input id="slider" type="range" value="0" min="0" max="100">
   </div>
 </x-layout>

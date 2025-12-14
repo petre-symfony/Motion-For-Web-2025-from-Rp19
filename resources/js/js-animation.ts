@@ -51,7 +51,10 @@ slider.addEventListener('input', () => {
   // animation.playbackRate = parseFloat(slider.valueAsNumber)
 
   //Sync the animation progress to the slider value
-  animation.currentTime = slider.valueAsNumber
+  const totalDuration = animation.effect?.getTiming().duration as number
+  console.log({totalDuration})
+
+  animation.currentTime = slider.valueAsNumber * totalDuration
 })
 
 /*square.style.transform = 'rotate(45deg)'
