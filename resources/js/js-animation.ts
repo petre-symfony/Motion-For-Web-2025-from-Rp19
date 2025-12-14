@@ -29,6 +29,7 @@ const options: KeyframeAnimationOptions = {
 const playButton = document.querySelector('#play') as HTMLButtonElement
 const pauseButton = document.querySelector('#pause') as HTMLButtonElement
 const reverseButton = document.querySelector('#reverse') as HTMLButtonElement
+const slider = document.querySelector('#slider') as HTMLInputElement
 
 const animation = square.animate(keyframes, options)
 
@@ -42,6 +43,10 @@ pauseButton.addEventListener('click', () => {
 
 reverseButton.addEventListener('click', () => {
   animation.reverse()
+})
+
+slider.addEventListener('change', () => {
+  // Sync the slider value to the animation speed
 })
 
 /*square.style.transform = 'rotate(45deg)'
