@@ -9,7 +9,8 @@ const keyframes = [
 ]
 
 const options = {
-  duration: 2000
+  duration: 2000,
+  repeat: 3,
 }
 
 square.animate(keyframes, options)
