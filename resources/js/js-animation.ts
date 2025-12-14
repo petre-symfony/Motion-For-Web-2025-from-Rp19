@@ -1,1 +1,3 @@
-alert('Hello from js-animation.ts!');
+const square = document.querySelector('.square')
+
+square.style.transform = 'rotate(45deg)'
