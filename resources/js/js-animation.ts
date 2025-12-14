@@ -11,4 +11,4 @@ const intervalId = setInterval(() => {
   if (rotation >= MAX_ROTATION) {
     clearInterval(intervalId)
   }
-}, 1000/60)
+}, 1000/10)
