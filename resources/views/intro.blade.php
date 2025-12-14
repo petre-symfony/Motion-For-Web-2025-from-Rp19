@@ -4,5 +4,6 @@
   <div class="controls">
     <button id="pause">Pause</button>
     <button id="play">Play</button>
+    <button id="reverse">Reverse</button>
   </div>
 </x-layout>
